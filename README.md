@@ -1,2 +1,0 @@
-# appointments
-Created with CodeSandbox
