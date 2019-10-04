@@ -21,7 +21,6 @@ class AppointmentForm extends React.Component {
     return (
       <div>
         <h3>Appointment Form</h3>
-        <h3>Create a new appointment.</h3>
         <hr />
         <form onSubmit={this.handleSubmit}>
           <fieldset>
@@ -42,6 +41,26 @@ class AppointmentForm extends React.Component {
               name="phone"
               type="text"
               placeholder="Phone"
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              onChange={this.handleChange}
+              id="appt-date"
+              type="date"
+              name="appt-date"
+              required
+            />
+            <input
+              onChange={this.handleChange}
+              type="time"
+              id="appt-time"
+              name="appt-time"
+              name="time"
+              min="09:00"
+              max="18:00"
+              step="900"
+              required
             />
           </fieldset>
           <input type="submit" />
