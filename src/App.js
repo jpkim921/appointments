@@ -8,10 +8,11 @@ import { Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Switch>
+      <Hello/>
+      {/* <Switch>
         <Route exact path="/" component={ClientContainer} />
         <Route path="/appointments/new" component={AppointmentForm} />
-      </Switch>
+      </Switch> */}
     </div>
   );
 }
